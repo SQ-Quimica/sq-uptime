@@ -1,0 +1,24 @@
+# url  codigos_aceitos(separados por virgula)
+https://ia-tracker.sqsmart.tech 200
+https://hub.admb.com.br 200
+https://agenda.sqsmart.tech 200
+https://amostras.sqsmart.tech 200
+https://beneficios.sqsmart.tech 200
+https://coa.sqsmart.tech 200
+https://comissoes.sqsmart.tech 200
+https://credito.sqsmart.tech 200
+https://doccontrol.sqsmart.tech 200
+https://doctec.sqsmart.tech 200
+https://doctec-teste.sqsmart.tech 200
+https://drmolecula-rag-poc.sqsmart.tech 200
+https://estoque.sqsmart.tech 200,401
+https://forecast.sqsmart.tech 200
+https://gotenberg.sqsmart.tech 200,401
+https://metas.sqsmart.tech 200
+https://orcamento.sqsmart.tech 200
+https://qualyhub.sqsmart.tech 200
+https://representante.sqsmart.tech 200
+https://retorno.sqsmart.tech 200
+https://tabela.sqsmart.tech 200
+https://sqsmart.tech 200
+https://hjv61v.easypanel.host 200
