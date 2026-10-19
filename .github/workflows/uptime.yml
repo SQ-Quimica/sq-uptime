@@ -32,7 +32,8 @@ jobs:
           n=$(gh issue list --label queda --state open --json number -q '.[0].number')
           if [ -z "$n" ]; then
             gh label create queda --color B60205 --description "Serviço fora do ar" 2>/dev/null || true
-            gh issue create --title "Queda detectada: $(wc -l < down.txt) endereço(s) fora do ar" --label queda --body-file report.md
+            { echo "@aluisiomb-tech alerta de disponibilidade"; echo; cat report.md; } > issue.md
+            gh issue create --title "Queda detectada: $(wc -l < down.txt) endereço(s) fora do ar" --label queda --body-file issue.md
           else
             gh issue edit "$n" --body-file report.md
           fi
@@ -43,5 +44,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           for n in $(gh issue list --label queda --state open --json number -q '.[].number'); do
-            gh issue close "$n" --comment "Todos os endereços voltaram a responder. $(TZ=America/Sao_Paulo date '+%d/%m/%Y %H:%M')"
+            gh issue close "$n" --comment "@aluisiomb-tech todos os endereços voltaram a responder. $(TZ=America/Sao_Paulo date '+%d/%m/%Y %H:%M')"
           done
